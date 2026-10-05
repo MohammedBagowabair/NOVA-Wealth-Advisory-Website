@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState, type FormEvent, type ReactNode } from 'react';
+import { useEffect, useMemo, useRef, useState, type FormEvent, type ReactNode } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ErrorBoundary } from '@/components/error-boundary';
 import { Toaster } from '@/components/ui/toaster';
@@ -187,6 +187,8 @@ function Booking() {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [confirmed, setConfirmed] = useState(false);
+  const [thankYouOpen, setThankYouOpen] = useState(false);
+  const thankYouDialogRef = useRef<HTMLDialogElement>(null);
   const year = current.getFullYear();
   const month = current.getMonth();
   const firstDay = new Date(year, month, 1).getDay();
@@ -203,12 +205,20 @@ function Booking() {
     new Date(year, month, day).getDay() === 0 ||
     new Date(year, month, day).getDay() === 6;
 
+  useEffect(() => {
+    const dialog = thankYouDialogRef.current;
+    if (!dialog) return;
+    if (thankYouOpen && !dialog.open) dialog.showModal();
+    if (!thankYouOpen && dialog.open) dialog.close();
+  }, [thankYouOpen]);
+
   function clearSelection() {
     setSelected(null);
     setTime('');
     setEmail('');
     setPhone('');
     setConfirmed(false);
+    setThankYouOpen(false);
   }
 
   function monthStep(delta: number) {
@@ -220,6 +230,7 @@ function Booking() {
     event.preventDefault();
     if (selected && time) {
       setConfirmed(true);
+      setThankYouOpen(true);
       setEmail('');
       setPhone('');
     }
@@ -267,6 +278,7 @@ function Booking() {
                       setEmail('');
                       setPhone('');
                       setConfirmed(false);
+                      setThankYouOpen(false);
                     }
                   }}
                   aria-label={day ? `Select ${monthLabel} ${day}` : 'empty'}
@@ -287,6 +299,7 @@ function Booking() {
                       onClick={() => {
                         setTime(slot);
                         setConfirmed(false);
+                        setThankYouOpen(false);
                       }}
                       data-testid={`button-time-${slot.replace(':', '')}`}
                     >
@@ -339,7 +352,7 @@ function Booking() {
                 )}
                 <div className="booking-note" role="status" data-testid="status-booking">
                   {confirmed
-                    ? `Your request is noted for ${dateValue?.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })} at ${time}. Your contact details have not been sent or saved.`
+                    ? `Your request is noted for ${dateValue?.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })} at ${time}. No appointment has been reserved.`
                     : time
                       ? `Selected: ${dateValue?.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })} at ${time}`
                       : 'Select an available time to continue.'}
@@ -348,6 +361,23 @@ function Booking() {
             ) : (
               <div className="booking-note">Select an available weekday to view times.</div>
             )}
+            <dialog
+              ref={thankYouDialogRef}
+              className="booking-thanks"
+              aria-labelledby="booking-thanks-title"
+              aria-describedby="booking-thanks-copy"
+              onClose={() => setThankYouOpen(false)}
+            >
+              <div className="booking-thanks-mark" aria-hidden="true"><Check size={18} /></div>
+              <span className="booking-thanks-eyebrow">Conversation request</span>
+              <h2 id="booking-thanks-title">Thank you.</h2>
+              <p id="booking-thanks-copy">
+                Your request for {dateValue?.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })} at {time} has been noted. This demo does not send your contact details or reserve an appointment.
+              </p>
+              <button className="btn dark" type="button" onClick={() => setThankYouOpen(false)} data-testid="button-close-thank-you">
+                Close
+              </button>
+            </dialog>
           </div>
         </div>
       </main>
