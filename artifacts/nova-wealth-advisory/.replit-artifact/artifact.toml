@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "NOVA Wealth Advisory"
+description = "A premium portfolio-demo website for a fictional Dubai financial consultancy, with advisory services, team and career journeys, insights, contact, and a demo booking experience."
+version = "1.0.0"
+id = "artifacts/nova-wealth-advisory"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20050
+
+[services.development]
+run = "pnpm --filter @workspace/nova-wealth-advisory run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/nova-wealth-advisory", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/nova-wealth-advisory/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20050"
+BASE_PATH = "/"

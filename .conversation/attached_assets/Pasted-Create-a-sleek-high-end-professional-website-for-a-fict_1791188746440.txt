@@ -1,0 +1,893 @@
+Create a **sleek, high-end, professional website** for a fictional UAE financial consultancy called **NOVA Wealth Advisory**.
+
+This is a portfolio/demo website inspired by a financial consultancy redesign project. The website must look like a **real premium professional-services brand**, not a generic AI-generated template.
+
+The overall design direction is:
+
+**Luxury consulting firm + modern wealth advisory + editorial corporate design**
+
+Think:
+
+* Sophisticated
+* Minimal
+* Quiet luxury
+* Strong typography
+* Excellent whitespace
+* Precise alignment
+* Elegant imagery
+* Restrained animation
+* Premium but approachable
+
+Do NOT make it flashy, salesy, overly corporate, or visually crowded.
+
+---
+
+# BRAND
+
+**NOVA Wealth Advisory**
+
+**Tagline:**
+Clarity for today. Confidence for tomorrow.
+
+**Location:**
+Dubai, United Arab Emirates
+
+**Industry:**
+Financial planning and wealth advisory
+
+The brand should communicate:
+
+**Trust + Intelligence + Stability + Personal Attention**
+
+---
+
+# VISUAL DIRECTION
+
+Use a very refined visual system.
+
+### Primary colors
+
+* Deep midnight navy: `#0D1724`
+* Warm ivory: `#F7F5F0`
+* Soft stone: `#E9E5DC`
+* Charcoal: `#24272B`
+* Muted champagne accent: `#B6A47A`
+* White: `#FFFFFF`
+
+Use the champagne color **very sparingly**.
+
+The website should NOT look gold-colored.
+
+The majority of the visual impact should come from:
+
+* typography
+* spacing
+* photography
+* composition
+* subtle contrast
+
+---
+
+# TYPOGRAPHY
+
+Use:
+
+**Headings:** Manrope / Neue Haas Grotesk-style / Plus Jakarta Sans
+**Body:** Inter
+
+Headings should be:
+
+* Large
+* Elegant
+* Slightly tight
+* High contrast
+* Editorial
+
+Example:
+
+**Financial clarity for the life you're building.**
+
+Use large typography rather than decorative graphics.
+
+Avoid excessive bold text.
+
+---
+
+# LAYOUT PRINCIPLES
+
+The design must use:
+
+* Large whitespace
+* Wide content containers
+* Asymmetrical editorial layouts
+* Large photography
+* Thin borders
+* Small uppercase labels
+* Minimal icons
+* Strong typographic hierarchy
+* Clean grids
+* Large section spacing
+
+Avoid:
+
+* Excessive rounded cards
+* Huge shadows
+* Glassmorphism
+* Neon gradients
+* Floating blobs
+* Decorative circles everywhere
+* Excessive icons
+* Dashboard-like UI
+
+Cards should generally have:
+
+* Minimal radius or almost square corners
+* Thin borders
+* Subtle hover transitions
+
+---
+
+# NAVIGATION
+
+Create an elegant sticky navbar.
+
+Left:
+
+**NOVA**
+
+Center/right navigation:
+
+About
+What We Do
+Careers
+Insights
+Contact
+
+Right CTA:
+
+**Book a Conversation**
+
+Navbar should initially feel transparent/subtle over the hero and transition into an ivory/navy solid background while scrolling.
+
+Keep it extremely clean.
+
+Mobile navigation should be a polished full-width menu with generous spacing.
+
+---
+
+# HOME PAGE
+
+## HERO
+
+Create a visually striking editorial hero.
+
+Left side:
+
+Small eyebrow:
+
+**FINANCIAL GUIDANCE · DUBAI**
+
+Large headline:
+
+**Financial clarity for the life you're building.**
+
+Supporting copy:
+
+Thoughtful financial planning for individuals and families in the UAE, built around your goals, priorities and future.
+
+Buttons:
+
+**Start a Conversation**
+
+**Our Approach**
+
+Right side:
+
+Use a high-quality editorial image showing a sophisticated UAE lifestyle or modern Dubai architecture.
+
+The image should feel:
+
+* Natural
+* Premium
+* Cinematic
+* Professional
+
+Do NOT use cheesy financial stock photography.
+
+Hero should have lots of empty space.
+
+Add a very subtle floating label:
+
+**Dubai · UAE**
+
+Keep it understated.
+
+---
+
+# TRUST BAR
+
+Immediately below hero.
+
+Use a very minimal horizontal section:
+
+**Personal**
+**Clear**
+**Long-Term**
+**Thoughtful**
+
+Each item has a tiny description.
+
+No giant cards.
+
+---
+
+# INTRODUCTION
+
+Create an editorial two-column section.
+
+Left:
+Small uppercase label:
+
+**A DIFFERENT APPROACH**
+
+Large heading:
+
+**Your finances should support your life — not complicate it.**
+
+Right:
+2 short paragraphs describing NOVA's approach.
+
+Add subtle text link:
+
+**Discover our philosophy →**
+
+Use a large margin between elements.
+
+---
+
+# SERVICES
+
+Section label:
+
+**WHAT WE DO**
+
+Large heading:
+
+**Advice built around your priorities.**
+
+Instead of normal service cards, create a **refined numbered list**.
+
+01
+**Financial Planning**
+
+02
+**Protection Planning**
+
+03
+**Retirement Planning**
+
+04
+**Investment Planning**
+
+Each row:
+
+* Large number
+* Service title
+* Short description
+* Arrow
+* Thin divider
+
+On hover:
+
+* Row slightly shifts
+* Arrow moves
+* Background subtly changes
+
+This section should feel very premium.
+
+---
+
+# FEATURED SERVICE
+
+Create one large visual split section.
+
+Image on one side.
+
+Text on the other:
+
+**Financial planning**
+
+A clear plan begins with understanding where you are and where you want to go.
+
+Add:
+
+**Explore Financial Planning →**
+
+Use oversized typography.
+
+---
+
+# OUR APPROACH
+
+Create an elegant 4-step process.
+
+Use huge numbers rather than icons.
+
+01
+**Understand**
+
+We begin by understanding your circumstances, goals and priorities.
+
+02
+**Plan**
+
+We bring those priorities together into a clear framework.
+
+03
+**Review**
+
+Plans should evolve as life changes.
+
+04
+**Move Forward**
+
+Clear next steps create greater confidence.
+
+Use lots of vertical whitespace.
+
+---
+
+# UAE SECTION
+
+Create a full-width dark section.
+
+Headline:
+
+**Built around real lives in the UAE.**
+
+Supporting text:
+
+Families, careers, businesses and international lifestyles can create complex financial decisions. Our approach starts with understanding the person behind the numbers.
+
+Use a sophisticated Dubai image with a subtle dark overlay.
+
+Do NOT add statistics or exaggerated claims.
+
+---
+
+# TEAM
+
+Label:
+
+**OUR PEOPLE**
+
+Heading:
+
+**People behind the advice.**
+
+Create 3 large professional portrait cards.
+
+### Omar Al Nouri
+
+Senior Financial Consultant
+
+### Sara Rahman
+
+Financial Planning Consultant
+
+### Daniel Mercer
+
+Wealth Advisory Consultant
+
+Each card should show:
+
+* Large portrait
+* Name
+* Role
+
+On hover reveal short biography.
+
+Avoid typical small profile-card styling.
+
+Make the photography dominant.
+
+---
+
+# CAREERS PREVIEW
+
+This must be clearly visible because recruitment is a major purpose of the website.
+
+Create a sophisticated section with a different visual rhythm.
+
+Small label:
+
+**JOIN NOVA**
+
+Large heading:
+
+**Build a career with room to grow.**
+
+Supporting text:
+
+Develop your skills, learn from experienced professionals and build a long-term career within a supportive consulting team.
+
+Three minimal columns:
+
+**01 · TRAINING**
+
+Structured learning and professional development.
+
+**02 · MENTORSHIP**
+
+Guidance from experienced team members.
+
+**03 · GROWTH**
+
+A clear path toward greater responsibility.
+
+CTA:
+
+**Explore Careers →**
+
+Use a strong lifestyle/team image.
+
+---
+
+# INSIGHTS
+
+Label:
+
+**INSIGHTS**
+
+Heading:
+
+**Ideas worth understanding.**
+
+Use an editorial magazine-style grid.
+
+Featured article should be significantly larger than the other two.
+
+Articles:
+
+**What makes a financial plan truly useful?**
+
+**Building financial confidence as priorities change**
+
+**Questions to ask before an important financial decision**
+
+Show:
+
+* Category
+* Date
+* Reading time
+* Title
+* Arrow
+
+Use understated hover animations.
+
+---
+
+# FINAL CTA
+
+Create a very minimal, premium closing section.
+
+Large heading:
+
+**Let's make the next decision clearer.**
+
+Supporting text:
+
+Start with a conversation about what matters to you.
+
+CTA:
+
+**Book a Conversation**
+
+Secondary:
+
+**Contact Us**
+
+No oversized graphics.
+
+---
+
+# ABOUT PAGE
+
+Create a sophisticated editorial About page.
+
+Hero:
+
+**Advice should feel personal.**
+
+Use large typography and a full-width image.
+
+Then:
+
+### Our Philosophy
+
+### Our Values
+
+Use four values:
+
+**Integrity**
+**Clarity**
+**Responsibility**
+**Partnership**
+
+Do not turn these into generic colored cards.
+
+Use typography and whitespace.
+
+Then team section.
+
+---
+
+# WHAT WE DO PAGE
+
+Hero:
+
+**Financial planning designed around your priorities.**
+
+Create 4 large sections:
+
+Financial Planning
+Protection Planning
+Retirement Planning
+Investment Planning
+
+Each section should have:
+
+* Large number
+* Large title
+* Description
+* Key considerations
+* Minimal CTA
+* Large editorial image
+
+Use alternating left/right layouts.
+
+---
+
+# CAREERS PAGE
+
+This page should feel like a premium recruitment landing page.
+
+Hero:
+
+**Build your career with people who invest in your growth.**
+
+CTA:
+
+**Register Your Interest**
+
+Then:
+
+## Why NOVA?
+
+Training
+Mentorship
+Growth
+Culture
+
+Use large typography and imagery.
+
+---
+
+## CAREER JOURNEY
+
+Create a vertical editorial timeline:
+
+01 — Start
+02 — Learn
+03 — Develop
+04 — Grow
+
+Make it visually elegant, not like a standard SaaS timeline.
+
+---
+
+## TEAM CULTURE
+
+Large photography section.
+
+Heading:
+
+**Ambition works better when it's shared.**
+
+Show collaborative team imagery.
+
+---
+
+## WHO WE'RE LOOKING FOR
+
+Use elegant text rows:
+
+Curious
+Communicative
+Responsible
+Driven
+Collaborative
+
+No cartoon icons.
+
+---
+
+## INTEREST FORM
+
+Create a refined form with:
+
+Full Name
+Email
+Phone
+Current Location
+Current Profession
+Years of Experience
+Why are you interested?
+CV Upload
+
+Button:
+
+**Register My Interest**
+
+After submission:
+
+**Thank you. We've received your interest.**
+
+---
+
+# INSIGHTS PAGE
+
+Make this feel like a premium editorial publication.
+
+Large featured article at top.
+
+Below:
+3-column article grid.
+
+Filter categories:
+
+All
+Financial Planning
+Retirement
+Protection
+Investing
+Career
+
+Article pages should have excellent typography and reading width.
+
+---
+
+# CONTACT PAGE
+
+Hero:
+
+**Let's start with a conversation.**
+
+Use a split layout:
+
+Left:
+Large heading and contact information.
+
+Right:
+Minimal contact form.
+
+Fields:
+
+Name
+Email
+Phone
+Subject
+Message
+
+CTA:
+
+**Send Enquiry**
+
+Add a tasteful Dubai location section.
+
+---
+
+# BOOKING EXPERIENCE
+
+Create a booking page styled like a premium consultation scheduling interface.
+
+Left:
+
+**A first conversation should be simple.**
+
+Right:
+
+Mock appointment calendar.
+
+Show available times such as:
+
+09:00
+10:30
+13:00
+15:30
+
+Selecting a slot should visually update the selected state.
+
+No real booking backend required.
+
+---
+
+# FOOTER
+
+Minimal premium footer.
+
+Large NOVA logo/text.
+
+Tagline:
+
+Clarity for today. Confidence for tomorrow.
+
+Navigation.
+
+Social links:
+LinkedIn
+Instagram
+YouTube
+
+Legal:
+Privacy
+Terms
+Disclaimer
+
+At bottom:
+
+**Demo website. Content is for portfolio demonstration purposes only and does not constitute financial, investment, insurance or legal advice.**
+
+---
+
+# ANIMATIONS
+
+Keep animations extremely sophisticated.
+
+Use:
+
+* Gentle fade-up reveals
+* Smooth text transitions
+* Subtle image scaling
+* Underline animation
+* Arrow movement
+* Navbar transformation
+* Smooth page transitions
+
+Animation duration around 300–700ms.
+
+Nothing should bounce, spin, or feel playful.
+
+The design should feel **slow, confident and intentional**.
+
+---
+
+# IMAGE STYLE
+
+Use premium editorial photography.
+
+Preferred subjects:
+
+* Dubai architecture
+* UAE skyline
+* Modern interiors
+* Professionals
+* Couples
+* Families
+* Business environments
+* Consultant portraits
+
+Photography should feel like a luxury magazine rather than stock photography.
+
+Avoid:
+
+* Handshakes
+* Calculator photos
+* Money flying
+* Charts
+* Coins
+* People pointing at laptops
+* Generic corporate meeting photos
+
+---
+
+# RESPONSIVE DESIGN
+
+The mobile version must feel intentionally designed, not simply compressed.
+
+Test at:
+
+375px
+390px
+430px
+768px
+1024px
+1440px
+1920px
+
+On mobile:
+
+* Hero typography scales beautifully
+* Images remain cinematic
+* Navigation becomes a premium full-screen menu
+* Buttons become full-width where appropriate
+* Editorial layouts stack naturally
+* No horizontal scrolling
+* Generous vertical spacing remains
+
+---
+
+# CONTENT STYLE
+
+Write content like a real premium advisory firm.
+
+Tone:
+
+**Calm. Intelligent. Human. Confident.**
+
+Avoid marketing clichés such as:
+
+"Unlock your financial potential"
+
+"Transform your financial future"
+
+"Take control of your wealth"
+
+"Empowering your financial journey"
+
+Instead use simple, credible language.
+
+Do not create:
+
+* Fake awards
+* Fake client numbers
+* Fake performance results
+* Guaranteed returns
+* Fake testimonials
+* Fake licenses
+* Fake regulatory claims
+
+All information is fictional demo content.
+
+---
+
+# IMPORTANT DESIGN REQUIREMENT
+
+The site must communicate two different journeys without looking like two separate websites.
+
+### CLIENT JOURNEY
+
+**Trust us → Understand us → Explore our approach → Start a conversation**
+
+### CAREER JOURNEY
+
+**Discover us → Understand the culture → See the growth path → Register interest**
+
+The **Careers / Join Us** message should be visible from the homepage, but the website must still primarily feel like a premium financial consultancy.
+
+---
+
+# FINAL QUALITY CHECK
+
+Before finishing, review the entire website.
+
+Remove anything that looks:
+
+* Generic
+* Template-based
+* Over-designed
+* AI-generated
+* Too colorful
+* Too rounded
+* Too sales-oriented
+
+The final result should resemble the website of a **high-end Dubai consulting or wealth advisory firm**.
+
+The most important qualities are:
+
+**Typography > spacing > composition > photography > subtle interaction**
+
+Not:
+**gradients > cards > icons > effects**
+
+Make the homepage exceptional enough that it can immediately be used as a **portfolio demo for a real Upwork client seeking a financial consultancy website redesign**.
