@@ -1,0 +1,1 @@
+- [NOVA public copy](nova-public-copy.md) — Avoid visitor-facing demo labels; keep real-world claims accurate.

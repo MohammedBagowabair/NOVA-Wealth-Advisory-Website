@@ -65,8 +65,8 @@ function Footer() {
         <div><div className="footer-title">Explore</div><nav className="footer-nav">{paths.map((p) => <Link key={p.href} href={p.href} data-testid={`link-footer-${p.label.toLowerCase().replaceAll(' ', '-')}`}>{p.label}</Link>)}<Link href="/book" data-testid="link-footer-book">Book a Conversation</Link></nav></div>
         <div><div className="footer-title">Stay connected</div><nav className="footer-nav"><a href="https://www.linkedin.com" target="_blank" rel="noreferrer" data-testid="link-social-linkedin">LinkedIn</a><a href="https://www.instagram.com" target="_blank" rel="noreferrer" data-testid="link-social-instagram">Instagram</a><a href="https://www.youtube.com" target="_blank" rel="noreferrer" data-testid="link-social-youtube">YouTube</a></nav><div className="footer-title" style={{ marginTop: 30 }}>Legal</div><nav className="footer-nav"><a href="#privacy" data-testid="link-privacy">Privacy</a><a href="#terms" data-testid="link-terms">Terms</a><a href="#disclaimer" data-testid="link-disclaimer">Disclaimer</a></nav></div>
       </div>
-      <div className="disclaimer" id="disclaimer" data-testid="text-disclaimer">Demo website. Content is for portfolio demonstration purposes only and does not constitute financial, investment, insurance or legal advice.</div>
-      <div className="footer-bottom"><span>© 2025 NOVA Wealth Advisory · Demonstration concept</span><span>Dubai · UAE</span></div>
+      <div className="disclaimer" id="disclaimer" data-testid="text-disclaimer">Content is for general informational purposes only and does not constitute financial, investment, insurance or legal advice.</div>
+      <div className="footer-bottom"><span>© {new Date().getFullYear()} NOVA Wealth Advisory</span><span>Dubai · UAE</span></div>
     </div>
   </footer>;
 }
@@ -119,7 +119,7 @@ function Home() {
 }
 
 function About() {
-  return <Shell><main><section className="wrap page-hero"><Eyebrow>About NOVA</Eyebrow><h1 className="display">Advice should feel personal.</h1><p className="body-copy">Thoughtful guidance begins with listening. We make room for the details that shape your decisions, and build a clear way forward around them.</p></section><div className="wide-image"><img src={image('family-interior.jpg')} alt="A calm, considered home interior" /></div><section className="wrap intro"><div><Eyebrow>Our philosophy</Eyebrow><h2 className="section-title">A good plan makes space for real life.</h2></div><div className="intro-right"><p className="body-copy">The most useful financial conversations start with what you hope to make possible. We take time to understand your circumstances before discussing the choices in front of you.</p><p className="body-copy">NOVA is a fictional Dubai advisory brand created around a simple idea: sound guidance should be clear, personal and grounded in the life it is meant to support.</p><Link href="/book" className="text-link" data-testid="link-about-book">Start a conversation <span>→</span></Link></div></section><section className="values"><div className="wrap values-grid"><div><Eyebrow>What guides us</Eyebrow><h2 className="section-title">Principles we return to.</h2></div><div className="value-list">{[['Integrity','Be candid, thoughtful and consistent in the way we work.'],['Clarity','Make important choices easier to understand.'],['Responsibility','Treat every conversation and decision with care.'],['Partnership','Work alongside people through change, not just at a moment in time.']].map(([h,p])=><div className="value-item" key={h}><h3>{h}</h3><p>{p}</p></div>)}</div></div></section><Team /><CTA title="Let's begin with what matters to you." /></main></Shell>;
+  return <Shell><main><section className="wrap page-hero"><Eyebrow>About NOVA</Eyebrow><h1 className="display">Advice should feel personal.</h1><p className="body-copy">Thoughtful guidance begins with listening. We make room for the details that shape your decisions, and build a clear way forward around them.</p></section><div className="wide-image"><img src={image('family-interior.jpg')} alt="A calm, considered home interior" /></div><section className="wrap intro"><div><Eyebrow>Our philosophy</Eyebrow><h2 className="section-title">A good plan makes space for real life.</h2></div><div className="intro-right"><p className="body-copy">The most useful financial conversations start with what you hope to make possible. We take time to understand your circumstances before discussing the choices in front of you.</p><p className="body-copy">Sound guidance should be clear, personal and grounded in the life it is meant to support.</p><Link href="/book" className="text-link" data-testid="link-about-book">Start a conversation <span>→</span></Link></div></section><section className="values"><div className="wrap values-grid"><div><Eyebrow>What guides us</Eyebrow><h2 className="section-title">Principles we return to.</h2></div><div className="value-list">{[['Integrity','Be candid, thoughtful and consistent in the way we work.'],['Clarity','Make important choices easier to understand.'],['Responsibility','Treat every conversation and decision with care.'],['Partnership','Work alongside people through change, not just at a moment in time.']].map(([h,p])=><div className="value-item" key={h}><h3>{h}</h3><p>{p}</p></div>)}</div></div></section><Team /><CTA title="Let's begin with what matters to you." /></main></Shell>;
 }
 
 function Services() {
@@ -142,8 +142,8 @@ function Careers() {
     <section className="journey"><div className="wrap"><Eyebrow>Career journey</Eyebrow><h2 className="section-title">Progress, with purpose.</h2><div className="journey-list">{[['01','Start','Bring your perspective, curiosity and willingness to learn.'],['02','Learn','Develop the knowledge and judgement that good advice requires.'],['03','Develop','Build confidence through thoughtful work and shared experience.'],['04','Grow','Take on greater responsibility as your skills and contribution grow.']].map(([n,h,p])=><div className="journey-row" key={n}><span>{n}</span><h3>{h}</h3><p>{p}</p></div>)}</div></div></section>
     <section className="feature"><div className="feature-image"><img src={image('team.jpg')} alt="NOVA colleagues working together" /></div><div className="feature-copy"><Eyebrow>Team culture</Eyebrow><h2 className="serif">Ambition works better when it's shared.</h2><p className="body-copy">We make room for open questions, generous collaboration and the kind of work that gets better when perspectives are shared.</p></div></section>
     <section className="qualities"><div className="wrap qualities-grid"><div><Eyebrow>Who we're looking for</Eyebrow><h2 className="section-title">How you work matters.</h2></div><div className="qualities-list">{['Curious','Communicative','Responsible','Driven','Collaborative'].map((q)=><div className="quality" key={q}>{q}</div>)}</div></div></section>
-    <section className="form-section" id="interest"><div className="wrap form-layout"><div><Eyebrow>Join NOVA</Eyebrow><h2 className="section-title">Register your interest.</h2><p className="body-copy">Tell us a little about yourself and the kind of work you hope to grow into.</p></div>{submitted ? <div className="success-box" role="status" data-testid="status-career-success">Thank you. We've received your interest.<br /><span style={{fontFamily:'var(--app-font-sans)',fontSize:13,color:'#626560'}}>This is a local demonstration confirmation; your details have not been sent.</span></div> : <form className="form" onSubmit={submit} data-testid="form-careers">
-      <Field label="Full Name" name="name" required /><Field label="Email" name="email" type="email" required /><Field label="Phone" name="phone" type="tel" required /><Field label="Current Location" name="location" required /><Field label="Current Profession" name="profession" required /><Field label="Years of Experience" name="experience" type="number" min="0" required /><Field label="Why are you interested?" name="interest" textarea required /><div className="field full"><label htmlFor="cv">CV Upload</label><input id="cv" name="cv" type="file" accept=".pdf,.doc,.docx" onChange={(e)=>setFileName(e.currentTarget.files?.[0]?.name || '')} data-testid="input-cv" /><small>{fileName || 'PDF or Word document'}</small></div><div className="field full"><button className="btn dark" type="submit" data-testid="button-submit-careers">Register My Interest <ArrowRight size={14} /></button><span className="form-error">Demo form only. Submission is not transmitted or stored.</span></div>
+     <section className="form-section" id="interest"><div className="wrap form-layout"><div><Eyebrow>Join NOVA</Eyebrow><h2 className="section-title">Register your interest.</h2><p className="body-copy">Tell us a little about yourself and the kind of work you hope to grow into.</p></div>{submitted ? <div className="success-box" role="status" data-testid="status-career-success">Thank you. We appreciate your interest in a career with NOVA.</div> : <form className="form" onSubmit={submit} data-testid="form-careers">
+      <Field label="Full Name" name="name" required /><Field label="Email" name="email" type="email" required /><Field label="Phone" name="phone" type="tel" required /><Field label="Current Location" name="location" required /><Field label="Current Profession" name="profession" required /><Field label="Years of Experience" name="experience" type="number" min="0" required /><Field label="Why are you interested?" name="interest" textarea required /><div className="field full"><label htmlFor="cv">CV Upload</label><input id="cv" name="cv" type="file" accept=".pdf,.doc,.docx" onChange={(e)=>setFileName(e.currentTarget.files?.[0]?.name || '')} data-testid="input-cv" /><small>{fileName || 'PDF or Word document'}</small></div><div className="field full"><button className="btn dark" type="submit" data-testid="button-submit-careers">Register My Interest <ArrowRight size={14} /></button></div>
     </form>}</div></section>
     <CTA title="Your next chapter can start with a conversation." text="Tell us what you are looking for." />
   </main></Shell>;
@@ -169,7 +169,7 @@ function Article() {
     <h2>Begin with the life around the numbers</h2><p>Goals often sit alongside competing priorities: family, work, a move, a business or a different idea of what the future could hold. Taking the time to bring those considerations together can make the choices ahead easier to see.</p>
     <p>A useful plan gives you a framework to return to. It should be clear enough to guide a decision, while flexible enough to be revisited as your circumstances evolve.</p>
     <h2>Make room for review</h2><p>Planning is not a one-time exercise. Conversations can help you understand what has changed, what remains important and whether the next steps still fit. The value is in the clarity of the process, rather than the length of a document.</p>
-    <p>Any financial decision should be considered in light of your individual circumstances. The ideas in this fictional demonstration article are general in nature and do not constitute financial, investment, insurance or legal advice.</p>
+    <p>Any financial decision should be considered in light of your individual circumstances. The information in this article is general in nature and does not constitute financial, investment, insurance or legal advice.</p>
     <Link href="/book" className="text-link" data-testid="link-article-conversation">Continue the conversation <span>→</span></Link>
   </div><section className="wrap insights" style={{paddingBottom:0}}><Eyebrow>Continue reading</Eyebrow><InsightsCards list={articles.filter((a)=>a.slug!==article.slug).slice(0,2)} /></section></main></Shell>;
 }
@@ -177,7 +177,67 @@ function Article() {
 function Contact() {
   const [sent,setSent] = useState(false);
   function submit(e: FormEvent<HTMLFormElement>) { e.preventDefault(); if (!e.currentTarget.reportValidity()) return; setSent(true); }
-  return <Shell><main><section className="wrap contact-hero"><div className="contact-grid"><div className="contact-info"><Eyebrow>Contact NOVA</Eyebrow><h1 className="display">Let's start with a conversation.</h1><p className="body-copy">A first conversation is a chance to share what is on your mind and see whether our approach feels right for you.</p><div className="contact-details"><div><strong>Visit</strong><span>Dubai, United Arab Emirates</span></div><div><strong>Email</strong><a href="mailto:hello@novaadvisory.example" data-testid="link-contact-email">hello@novaadvisory.example</a></div><div><strong>Conversation</strong><Link href="/book" className="text-link" data-testid="link-contact-book">Choose a time <span>→</span></Link></div></div></div><div>{sent ? <div className="success-box" role="status" data-testid="status-contact-success">Thank you for getting in touch.<br /><span style={{fontFamily:'var(--app-font-sans)',fontSize:13,color:'#626560'}}>Your message has not been sent; this is a local demonstration confirmation.</span></div> : <form className="form" onSubmit={submit} data-testid="form-contact"><Field label="Name" name="name" required /><Field label="Email" name="email" type="email" required /><Field label="Phone" name="phone" type="tel" /><div className="field"><label htmlFor="subject">Subject *</label><select id="subject" name="subject" required defaultValue="" data-testid="input-subject"><option value="" disabled>Select a subject</option><option>Financial planning</option><option>Protection planning</option><option>Retirement planning</option><option>Investment planning</option><option>Other enquiry</option></select></div><Field label="Message" name="message" textarea required /><div className="field full"><button className="btn dark" type="submit" data-testid="button-submit-contact">Send Enquiry <ArrowRight size={14} /></button><span className="form-error">Demo form only. Your details are not transmitted or stored.</span></div></form>}</div></div></section><section className="location"><div className="wrap location-grid"><div><Eyebrow>Our location</Eyebrow><h2 className="section-title">Dubai, UAE.</h2><p>Our fictional advisory practice is based in Dubai, a city shaped by international perspectives and lives lived across borders.</p></div><div className="location-art"><img src={image('dubai-evening.jpg')} alt="Dubai skyline at dusk" /></div></div></section></main></Shell>;
+  return (
+    <Shell>
+      <main>
+        <section className="wrap contact-hero">
+          <div className="contact-grid">
+            <div className="contact-info">
+              <Eyebrow>Contact NOVA</Eyebrow>
+              <h1 className="display">Let's start with a conversation.</h1>
+              <p className="body-copy">A first conversation is a chance to share what is on your mind and see whether our approach feels right for you.</p>
+              <div className="contact-details">
+                <div><strong>Visit</strong><span>Dubai, United Arab Emirates</span></div>
+                <div><strong>Conversation</strong><Link href="/book" className="text-link" data-testid="link-contact-book">Choose a time <span>→</span></Link></div>
+              </div>
+            </div>
+            <div>
+              {sent ? (
+                <div className="success-box" role="status" data-testid="status-contact-success">
+                  Thank you. We appreciate your interest in NOVA.
+                </div>
+              ) : (
+                <form className="form" onSubmit={submit} data-testid="form-contact">
+                  <Field label="Name" name="name" required />
+                  <Field label="Email" name="email" type="email" required />
+                  <Field label="Phone" name="phone" type="tel" />
+                  <div className="field">
+                    <label htmlFor="subject">Subject *</label>
+                    <select id="subject" name="subject" required defaultValue="" data-testid="input-subject">
+                      <option value="" disabled>Select a subject</option>
+                      <option>Financial planning</option>
+                      <option>Protection planning</option>
+                      <option>Retirement planning</option>
+                      <option>Investment planning</option>
+                      <option>Other enquiry</option>
+                    </select>
+                  </div>
+                  <Field label="Message" name="message" textarea required />
+                  <div className="field full">
+                    <button className="btn dark" type="submit" data-testid="button-submit-contact">
+                      Send Enquiry <ArrowRight size={14} />
+                    </button>
+                  </div>
+                </form>
+              )}
+            </div>
+          </div>
+        </section>
+        <section className="location">
+          <div className="wrap location-grid">
+            <div>
+              <Eyebrow>Our location</Eyebrow>
+              <h2 className="section-title">Dubai, UAE.</h2>
+              <p>Dubai brings together perspectives shaped by family, work and life across borders. We approach financial conversations with those wider circumstances in view.</p>
+            </div>
+            <div className="location-art">
+              <img src={image('dubai-evening.jpg')} alt="Dubai skyline at dusk" />
+            </div>
+          </div>
+        </section>
+      </main>
+    </Shell>
+  );
 }
 
 function Booking() {
@@ -247,7 +307,6 @@ function Booking() {
               Choose a convenient weekday and time for a complimentary introductory conversation.
               No preparation is needed; simply bring the questions you have.
             </p>
-            <p className="body-copy">This is a demonstration calendar. No appointment is actually booked.</p>
           </div>
           <div className="booking-card">
             <div className="booking-top">
@@ -319,7 +378,6 @@ function Booking() {
                           name="email"
                           type="email"
                           autoComplete="email"
-                          placeholder="name@example.com"
                           value={email}
                           onChange={(event) => setEmail(event.currentTarget.value)}
                           required={!phone.trim()}
@@ -352,7 +410,7 @@ function Booking() {
                 )}
                 <div className="booking-note" role="status" data-testid="status-booking">
                   {confirmed
-                    ? `Your request is noted for ${dateValue?.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })} at ${time}. No appointment has been reserved.`
+                    ? `Your preferred time: ${dateValue?.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })} at ${time}.`
                     : time
                       ? `Selected: ${dateValue?.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })} at ${time}`
                       : 'Select an available time to continue.'}
@@ -372,7 +430,7 @@ function Booking() {
               <span className="booking-thanks-eyebrow">Conversation request</span>
               <h2 id="booking-thanks-title">Thank you.</h2>
               <p id="booking-thanks-copy">
-                Your request for {dateValue?.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })} at {time} has been noted. This demo does not send your contact details or reserve an appointment.
+                Your preferred time is {dateValue?.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })} at {time}. Thank you for your interest in NOVA.
               </p>
               <button className="btn dark" type="button" onClick={() => setThankYouOpen(false)} data-testid="button-close-thank-you">
                 Close
