@@ -1,0 +1,7 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="NOVA Wealth Advisory">
+  <rect width="64" height="64" rx="14" fill="#0D1724"/>
+  <!-- Geometric N mark -->
+  <path d="M18 46V18h6.2L40 38.6V18h6v28h-6.2L24 27.4V46H18z" fill="#B6A47A"/>
+  <!-- Small nova spark -->
+  <path d="M48.5 14.5l1.1 2.6 2.6 1.1-2.6 1.1-1.1 2.6-1.1-2.6-2.6-1.1 2.6-1.1 1.1-2.6z" fill="#F7F5F0"/>
+</svg>
